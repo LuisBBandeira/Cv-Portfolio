@@ -1,0 +1,24 @@
+import BaseDados como base
+
+#Estao função mostra de um forma caracterizada o historico de movimentos
+funcao Visao_Categorias_Debito():
+    entrada("Qual a categoria que pertendes ver o historico de movimentos" , categoria)
+        se categoria em MovimentoCredito
+            cada categoria, montante, descricao em MovimentoCredito 
+                imprime('' {categoria} - {montante}  - {descricao}'')
+                
+        senao:
+            imprime("Não existe essa categoria na base de dados")
+
+funcao Visao_Categorias_Debito():
+    entrada("Qual a categoria que pertendes ver o historico de movimentos" , categoria)
+        se categoria em MovimentoDebito
+            cada categoria, montante, descricao em MovimentoDebito 
+                imprime('' {categoria} - {montante}  - {descricao}'')
+                
+        senao:
+            imprime("Não existe essa categoria na base de dados")
+        
+        
+
+    
