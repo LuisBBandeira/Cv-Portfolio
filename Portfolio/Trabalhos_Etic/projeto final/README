@@ -1,0 +1,17 @@
+|»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»|
+| Programa DLWallet                                                                                                                                         |
+|                                                                                                                                                           |
+| 1 - Menu principal - o menu pricipal a presenta um interface para a escolha da ação.                                                                      |
+|                                                                                                                                                           |
+| 2 - Opcão Visao geral - Esta opção apresenta de forma geral de visualizar o saldo da conta e de onde entrou/saio dinheiro da mesma.                       |
+|                                                                                                                                                           |
+| 3.  Opção Movimentos de saldo - Esta opção permite ao user declarar um despesa fazendo a distinção entre credito ou debito.                               |
+|                                                                                                                                                           |
+| 4 - Opção Visao caracterizada - Esta opção é mais detalhada do que a visao geral e apresenta o saldo da conta e de uma forma ordenada por tipo de despesa.|
+|«««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««|
+
+Na criação deste programa optei por usar dicionarios para distigir as oprações entre credito e debito, visto que estou mais familiarizado com a utilização 
+dos mesmos e ainda não me sinto muito confortavel com a utilização de modelos. Construi um menu principal que interliga todos os ficheiros para um melhor 
+funcionamento do programa e no quesito da visualização global e caracterizada optei por separa-la em dois vertentes um sendo credito e a outra debito , para facilitar
+o fluxo de dados criei uma base de dados muito simples com uma variavel para o saldo total da conta e com os dois dicionarios anteriormente referido.
+

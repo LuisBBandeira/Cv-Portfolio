@@ -1,0 +1,47 @@
+import BaseDados como base
+import VisaoGlobal como vglobal
+import MovimentoSaldo como movisaldo
+improt VisaoCategorias como vcategorias
+
+#Menu principal que interliga todos os ficheiros deste programa
+opcao = ""
+enquanto opcao != "ç"
+    imprime(''
+
+    »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
+
+                            Menu Principal
+
+                            1-  Visão global
+                        2- Movimentos de saldo
+                    3- Visão em categorias  
+                ç - Sair      
+
+
+    «««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««'')
+
+        entrada("Qual a opção pretendida" , opcao)
+        se opcao == 1
+            Visao_Global()
+        se opcao == 2
+            entrada("Qual foi o tipo de movimento utilizado 1.credito 2.Debito" , CreditoDebito)
+                se CreditoDebito == 1
+                    Movimentos_De_Saldo_Credito()
+                se CreditoDebito == 2
+                    Movimentos_De_Saldo_Debito()
+        se opcao == 3
+            entrada("Que tipo de historico pertendes ver 1.credito 2.Debito" , DebitoCredito)
+                se DebitoCredito == 1
+                    Visao_Categorias_Credito(categoria,montante,descricao)
+                se DebitoCredito == 2
+                    Visao_Categorias_Debito(categoria,montante,descricao)
+        
+        senao:
+            imprime("Opção invalida, porfavor usa os comandos descritos.")
+
+imprime(''
+                Obrigado por utilizares esta app
+                    Até a proxima '')
+
+
+

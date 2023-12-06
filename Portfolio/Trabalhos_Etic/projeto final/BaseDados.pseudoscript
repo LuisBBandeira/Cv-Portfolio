@@ -1,0 +1,5 @@
+MovimentoCredito = ()
+MovimentoDebito = ()
+saldo = 0
+TotalCredito = 0
+TotalDebito = 0

@@ -1,0 +1,36 @@
+import BaseDados como base
+
+#Esta função cria um categoria de movimento se a mesma ainda não existir e guarda também o montante e a discrição da transação 
+funcao Movimentos_De_Saldo_Credito():
+
+    entrada("Em que que categoria pretendes declarar a tua despesa:" , categoria)
+    entrada("Qual o montante:" , montante)
+    entrada("Escreve um pequena descrição para a tua despesa." , descricao)
+
+    se categoria em base.MovimentoCredito
+        base.MovimentoCredito[categoria].add((montante -> descricao))
+        imprime("Operação feita com sucesso")
+        saldo = saldo + montante
+        TotalCredito = TotalCredito + montante
+    senao:
+        base.MovimentoCredito.add((categoria -> (montante -> descricao)))
+        imprime("Operação feita com sucesso")
+        saldo = saldo + montante
+        TotalCredito = TotalCredito + montante
+
+funcao Movimentos_De_Saldo_Debito()
+
+    entrada("Em que que categoria pretendes declarar a tua despesa:" , categoria)
+    entrada("Qual o montante:" , montante)
+    entrada("Escreve um pequena descrição para a tua despesa." , descricao)
+
+    se categoria em base.MovimentoDebito
+        base.MovimentoDebito[categoria].add((montante -> descricao))
+        imprime("Operação feita com sucesso")
+        saldo = saldo - montante
+        TotalDebito = TotalDebito - montante
+    senao:
+        base.MovimentoDebito.add((categoria -> (montante -> descricao)))
+        imprime("Operação feita com sucesso")
+        saldo = saldo - montante
+        TotalDebito = TotalDebito - montante

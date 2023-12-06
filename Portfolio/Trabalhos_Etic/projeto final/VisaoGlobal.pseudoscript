@@ -1,0 +1,15 @@
+import BaseDados como base
+
+funcao Visao_Global():
+#Esta função serve para dar um visão geral da conta ao user
+    imprime("O teu saldo atual é de {saldoconta}")
+    imprime("|Movimentos a Debito|")
+    imprime("|Total:{DebitoTotal}")
+    cada cada categoria, montante, descricao em base.MovimentoDebito
+        imprime("{categoria} - {montante}  - {descricao}")
+
+    imprime("|Movimentos Credito|")
+    imprime("|Total:{CredioTotal}")
+    cada categoria, montante, descricao em base.MovimentoCredito 
+        imprime("{categoria} - {montante}  - {descricao}")
+
